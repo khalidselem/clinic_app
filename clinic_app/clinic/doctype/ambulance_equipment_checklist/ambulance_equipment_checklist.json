@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{clinic_assets}-{date}",
+ "creation": "2021-08-21 23:08:16.735015",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "clinic_assets",
+  "clinic_name",
+  "date",
+  "amended_from",
+  "select_all",
+  "yes",
+  "no",
+  "ambulance_equipment_checklist_item"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "clinic_assets",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Clinic Assets",
+   "options": "Clinic Assets",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ambulance_equipment_checklist_item",
+   "fieldtype": "Table",
+   "label": "Ambulance Equipment Checklist Item",
+   "options": "Ambulance Equipment Checklist Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ambulance Equipment Checklist",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "clinic_assets.clinic_name",
+   "fieldname": "clinic_name",
+   "fieldtype": "Data",
+   "label": "Clinic Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "select_all",
+   "fieldtype": "Heading",
+   "label": "Select All"
+  },
+  {
+   "fieldname": "yes",
+   "fieldtype": "Button",
+   "label": "Yes"
+  },
+  {
+   "fieldname": "no",
+   "fieldtype": "Button",
+   "label": "No"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-06-08 17:30:53.279996",
+ "modified_by": "Administrator",
+ "module": "Clinic",
+ "name": "Ambulance Equipment Checklist",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

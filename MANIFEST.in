@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include clinic_app *.css
+recursive-include clinic_app *.csv
+recursive-include clinic_app *.html
+recursive-include clinic_app *.ico
+recursive-include clinic_app *.js
+recursive-include clinic_app *.json
+recursive-include clinic_app *.md
+recursive-include clinic_app *.png
+recursive-include clinic_app *.py
+recursive-include clinic_app *.svg
+recursive-include clinic_app *.txt
+recursive-exclude clinic_app *.pyc

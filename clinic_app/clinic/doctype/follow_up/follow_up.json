@@ -1,0 +1,132 @@
+{
+ "creation": "2021-08-26 00:33:24.869866",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "medical_crew",
+  "employee_name",
+  "whats_app_photo",
+  "clinic_checklist",
+  "ambu_checklist_weekly",
+  "handover",
+  "inventory",
+  "review_online_system",
+  "follow_up_log_in_log_out_crew_in_online_system",
+  "record_attendance_crew_on_system",
+  "log_book",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "medical_crew",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Medical Crew",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "whats_app_photo",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Whats App Photo"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "clinic_checklist",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Clinic Checklist"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "handover",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Handover"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "log_book",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Log Book"
+  },
+  {
+   "columns": 1,
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fetch_from": "medical_crew.first_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "ambu_checklist_weekly",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Ambu. Checklist (weekly)"
+  },
+  {
+   "default": "0",
+   "fieldname": "inventory",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Inventory"
+  },
+  {
+   "default": "0",
+   "fieldname": "review_online_system",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Review Online System"
+  },
+  {
+   "default": "0",
+   "fieldname": "follow_up_log_in_log_out_crew_in_online_system",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Follow up Log in Log out Crew in Online System"
+  },
+  {
+   "default": "0",
+   "fieldname": "record_attendance_crew_on_system",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Record Attendance Crew on System"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-09-05 14:28:48.317330",
+ "modified_by": "Administrator",
+ "module": "Clinic",
+ "name": "Follow Up",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

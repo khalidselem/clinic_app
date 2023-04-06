@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "autoname": "format:",
+ "creation": "2021-08-21 22:56:52.384766",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment_in_english",
+  "equipment_in_arabic",
+  "quantity",
+  "yes",
+  "no",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipment_in_english",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Equipment in English",
+   "read_only": 1
+  },
+  {
+   "fieldname": "equipment_in_arabic",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Equipment in Arabic",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "No"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-28 13:06:38.501921",
+ "modified_by": "Administrator",
+ "module": "Clinic",
+ "name": "Ambulance Equipment Checklist Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
